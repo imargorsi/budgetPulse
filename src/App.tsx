@@ -1,9 +1,19 @@
 import "./App.css";
 
+import ThemeProvider from "./hooks/ThemeProvider";
+
+import ThemeSelect from "./ThemeToggle";
+
 function App() {
   return (
     <>
-      <h1 className="bg-mint-500 text-white p-4 text-lg">Hello</h1>
+      <ThemeProvider>
+        <div className="min-h-screen bg-white dark:bg-gray-900">
+          <nav className="p-4">
+            <ThemeSelect />
+          </nav>
+        </div>
+      </ThemeProvider>
     </>
   );
 }
