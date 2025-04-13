@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <ThemeProvider>
-        <div className="min-h-screen bg-white dark:bg-gray-900">
+        <div className="min-h-screen bg-primary dark:bg-primary-dark">
           <nav className="p-4">
             <ThemeSelect />
           </nav>
